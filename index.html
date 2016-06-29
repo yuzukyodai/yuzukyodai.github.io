@@ -1,197 +1,127 @@
-<!doctype>
-<html>
-    <head>
-        <title>YK</title>
-        <meta name="viewport" value="width=device-width;initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body data-stellar-background-ratio="0.03">
-        <div class="navigation">
-            <img src="assets/img/yuzu_logo_white_s.png" class="logoimg">
-            <img src="assets/img/yuzu_logo_color_s.png" class="logoimg2">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="YuzuKyodai">
+
+    <title>Yuzu Kyodai</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+        </ul>
+    </nav> -->
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Yuzu Kyodai</h1>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">under construction</a>
         </div>
+    </header>
 
-        <div id="mobile">
-            <img src="assets/img/yuzu_logo_white_s.png" class="logoimgm">
-            <div class="contact">
-                <div style="margin-bottom: 25px;">
-                    It's time to get excited about a new kind of drink in Japan.
-                </div>
-                <div style="margin-bottom: 25px;">
-                    <p>
-                    ゆず兄弟株式会社<br>
-                    〒107-0062<br>
-                    東京都港区<br>
-                    南青山２丁目２番１５号<br>
-                    ウィン青山９４２<br>
-                    </p>
-                </div>
-                <div style="">
-                    <p>
-                    Yuzu Kyodai K.K.<br>
-                    Win Aoyama 942<br>
-                    Minami-Aoyama 2-2-15<br>
-                    107-0062, Minato-Ku<br>
-                    Tokyo, Japan<br>
-                    </p>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>ゆず兄弟株式会社</strong>
+                    </h4>
+                    <p>〒107-0062<br>東京都港区<br>南青山２丁目２番１５号<br>ウィン青山９４２</p>
+
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Yuzu Kyodai K.K.</p>
                 </div>
             </div>
         </div>
+    </footer>
 
-        <div class="slide" id="slide1" data-slide="1">
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-                <img src="assets/img/yk_logo_text_white.gif" class="toplogo">
-                <img class="scrollicon" src="/assets/img/scroll_icon_white.png" onmouseover="switchImage(this);" onmouseout="switchImage(this);" width="42px" data-stellar-ratio="-0.3" onclick="$('body').animate({ scrollTop: $('#slide4').offset().top }, 800);">
-<!--
-                <div>
-                    ↓
-                </div>
-            -->
-        </div><!--End Slide 1-->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-        <!--
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
 
-        <div class="slide snap" id="slide2" data-slide="2">
-            <div class="textbox titlebox" data-stellar-ratio="1.3">
-                Introduction <br><span class="blue">変化するスライド </span>
-            </div>
-            <div class="textbox" data-stellar-ratio="2.2">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-            </div>
-            <div class="textbox blue" data-stellar-ratio="2.8">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-            </div>  
-        </div> --><!--End Slide 2-->
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
 
-        <!--
-        <div class="slide snap" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
-            <div class="textbox titlebox" data-stellar-ratio="1.2">
-                A different Slide <span class="blue">変化するスライド </span>
-            </div>
-            <div class="textbox" data-stellar-ratio="1.9">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-            </div>
-            <div class="textbox blue" data-stellar-ratio="2.4">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-            </div>  
-        </div>--><!--End Slide 3-->
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-        <div class="slide" id="slide4" data-slide="4">
-            <div class="textbox titlebox">Contact</div>
-            <div class="textbox blue">
-                <div style="margin-bottom: 25px;">
-                    It's time to get excited about a new kind of drink in Japan.
-                </div>
-                <div style="width: 50%; float: left; padding: 0px; position: relative; top: 0px; margin-bottom: 25px;">
-                    <p>
-                    ゆず兄弟株式会社<br>
-                    〒107-0062<br>
-                    東京都港区<br>
-                    南青山２丁目２番１５号<br>
-                    ウィン青山９４２<br>
-                    </p>
-                </div>
-                <div style="width: 50%; float: left; padding: 0px; position: relative; top: 0px;">
-                    <p>
-                    Yuzu Kyodai K.K.<br>
-                    Win Aoyama 942<br>
-                    Minami-Aoyama 2-2-15<br>
-                    107-0062, Minato-Ku<br>
-                    Tokyo, Japan<br>
-                    </p>
-                </div>
-                <div style="clear:both; margin-top: 25px;">contact@yuzukyodai.co.jp</div>
-            </div>
-            <div class="textbox blue">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3241.224169527012!2d139.72398500000003!3d35.671481899999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c83022475b1%3A0xe19e6b042fd2f4f6!2z44CSMTA3LTAwNjIgVMWNa3nFjS10bywgTWluYXRvLWt1LCBNaW5hbWlhb3lhbWEsIDIgQ2hvbWUy4oiSMTUg44Km44Kk44Oz6Z2S5bGx!5e0!3m2!1sen!2s!4v1393150259198" width="450" height="400" frameborder="0" style="border:0"></iframe>
-            </div>
-            <div class="textbox">&copy; 2014 ゆず兄弟株式会社</div>
-        </div>
-
-
-        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="assets/js/jquery.stellar.min.js"></script>
-        <script src="assets/js/waypoints.min.js"></script><!--
-        <script src="assets/js/jquery.scrollstop.js"></script>
-        <script src="assets/js/jquery.easing.1.3.js"></script>
-        <script src="assets/js/jquery.scrollsnap.js"></script>
-    -->
-
-        <script>
-        $(document).ready(function(){
-            $(".scrollicon").stellar({
-                hideDistantElements : true,
-                hideElement : function(el){ console.log("hiding");console.log(el); }
-            });
-            //$(".logoimg").stellar({positionProperty: 'position'});
-
-            $("#slide4").waypoint(function(direction){
-                if(direction === 'down'){
-                    $(".scrollicon").css('display', 'none');
-                } else {
-                    $(".scrollicon").css('display', 'block');
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
                 }
-            });
-            $("#slide4").waypoint(function(direction){
-                if(direction === 'down'){
-                    $(".logoimg").fadeOut();
-                    $(".logoimg2").fadeIn();
-                } else {
-                    $(".logoimg").fadeIn();
-                    $(".logoimg2").fadeOut();
-                }
-            });
-
-            /*
-            $(document).scrollsnap({
-                snaps: '.snap',
-                proximity: 150,
-                easing: 'easeOutSine',
-                duration: 200
-            });
-*/
+            }
         });
+    });
+    </script>
 
-        /* Preload images */
-        var images = new Array()
-        function preload() {
-            for (i = 0; i < preload.arguments.length; i++) {
-                images[i] = new Image()
-                images[i].src = preload.arguments[i]
-            }
-        }
-        preload(
-            "/assets/img/scroll_icon_color.png"
-        );
+</body>
 
-        /*  onmouseover function */
-        var onMouseOvers = {
-            "/assets/img/scroll_icon_white.png" : "/assets/img/scroll_icon_color.png"
-        };
-        function switchImage(image){
-            if(image && image.src) {
-                var src = image.src.slice(window.location.origin.length);
-
-                if(onMouseOvers[src]) {
-                    var newSrc = onMouseOvers[src];
-                    onMouseOvers[newSrc] = src;
-                    image.src = newSrc;
-                }
-            }
-        }
-        </script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49890264-1', 'yuzukyodai.co.jp');
-  ga('send', 'pageview');
-
-</script>
-    </body>
 </html>
